@@ -1,0 +1,385 @@
+@charset "UTF-8";
+html,body{}
+
+#wrap{}
+
+/* header영역 */
+#header{
+    height: 148px;
+    border-bottom: 2px solid rgb(178, 40, 40);
+}
+
+.head_inner{
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.util{float: left; margin-top: 10px;}
+
+.util li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.util li a{}
+
+.util li a img{}
+
+
+.topmenu{float: right; margin-top: 10px;}
+
+.topmenu li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.topmenu li a{
+    font-size: 12px;
+}
+
+.topmenu li a:hover{
+    font-size: 12px;
+    color: #666;
+}
+
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.nav{
+    padding-top: 90px;
+}
+
+.main{}
+
+.main > li{
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    transition: all 0.5s;
+    padding: 10px 0;
+}
+
+.main > li > a span{display:none; color: white; transition: all 0.5s;}
+
+.main > li > a img{display: inline-block;}
+
+.main > li:hover > a{
+    background-color: rgb(255, 92, 92);
+}
+
+.main > li:hover > a img{
+    filter: invert(100%) brightness(200%);
+}
+
+.main > li:hover > a span{
+    display: block;
+    font-size: 12px;
+}
+
+
+
+.sub{
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+    top: 60px;
+    display: none;
+}
+
+.sub li{
+    
+}
+
+.sub li a{
+    display: block;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sub li a:hover{
+    color: aliceblue;
+}
+
+.sub_bg{
+    width: 100%;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    left: 0; top: 148px;
+    display: none;
+    z-index: 5;
+}
+
+
+/* 메인 슬라이드 영역 */
+.main_slide{
+    width: 100%;
+    height: 480px;
+    clear: both;
+    position: relative;  /* slick-dots positioning */
+}
+.move{height: 480px;}
+
+.move .slick-slide{height: 480px;}
+.move .slick-slide a{
+    display: block;
+    height: 480px;
+}
+.move .slick-slide a img{width: 100%}
+
+.move .slick-dots{
+    position: absolute;
+    z-index: 7;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.move .slick-dots li{display: inline-block; margin: 5px; }
+
+.move .slick-dots li button{
+    width: 20px;height: 20px;
+    border: none;
+    border-radius: 10px;
+    text-indent: -9999px;
+    box-shadow: 1px 1px 5px gray, inset 1px 1px #ddd;
+    transition: all 0.3s;
+}
+
+.move .slick-dots li.slick-active button{
+    width: 80px;
+    background-color: #666;
+}
+
+/* 컨텐츠 영역 */
+.main_inner{
+    width: 940px;
+    margin: 50px auto;
+}
+
+.cont01{}
+
+.cont01_list{
+    display: flex;
+    justify-content: space-between;    
+}
+.cont01_list li{}
+.cont01_list li h3{padding-top: 30px; padding-left: 20px;
+}
+.cont01_list li p{}
+
+.franchise{
+    width: 225px;height: 272px;
+    background-color: #faf9f7;
+}
+
+.mall{
+    width: 460px;
+    height: 272px;
+}
+
+.mall > p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mall_list{display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.mall_list li:nth-child(2){
+    border-left: 1px dotted #ddd;
+    border-right: 1px dotted #ddd;;
+}
+.mall_list li a{}
+.mall_list li a img{width: 80%;}
+.mall_list li a p{
+    font-size: 12px;
+}
+
+
+.store{
+    width: 240px;
+    height: 272px;
+    background-color: #faf9f7;
+}
+
+
+/* cont02 영역 */
+.cont02{
+    height: 152px;
+    margin: 50px 0 30px;
+}
+.cont2_list{
+    display: flex;
+    justify-content: space-between;
+}
+.cont2_list li{}
+
+
+/* cont03 영역 */
+.cont03{}
+
+.cont03_list{display: flex;
+    justify-content: space-between;
+}
+
+.cont03_list > li{
+    width: 24%;
+}
+.cont03_list h3{
+    margin-bottom: 10px;
+}
+
+.event_list{}
+.event_list li{
+    line-height: 2;
+}
+.event_list li a{
+    float: left;
+    width: 70%;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.event_list li a sapn{float: right;}
+
+.b2b h3 a img{}
+.b2b p{
+    line-height: 2;
+    word-spacing: -0.1em;
+}
+.more{
+    margin-top: 5px;
+}
+
+/* news영역 */
+.table{
+    /* border: 1px red solid; */
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td{padding: 5px 0;}
+
+.col1{width: 75%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 1px orange solid; */
+}
+
+.col2{width: 25%; text-align: right;}
+
+
+/* notice영역 */
+.notice_list{text-align: right;}
+.notice_list li{display: inline-block; text-align: center; margin-top: 10px;}
+.notice_list li a{display: block;}
+.notice_list li:nth-child(1) a{
+    border-right: 1px dotted gray;
+    padding-right: 10px;
+}
+.notice_list li:nth-child(1) span{padding-right: 10px;}
+.notice_list li span{display: block; font-size: 12px; margin-top: 5px;}
+
+
+.cont04{margin-top: 10px; padding: 30px 0; border-top: 2px solid rgb(255, 90, 90);}
+.cont04 img{ vertical-align: bottom !important;}
+.cont04 a{margin-right: 10px;}
+.cont04 a img{}
+
+
+
+/* footer영역 */
+#footer{
+    width: 100%;
+    background-color: #ba000d;
+    padding: 20px 0;
+}
+
+.foot_inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.f_menu{color: white;}
+.f_menu li{float: left;}
+.f_menu li a{display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.f_menu li:first-child a{padding-left: 0 !important;}
+
+
+.address{
+    clear: both;
+    font-style: normal;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 2;
+}
+
+
+
+/* 가맹문의 */
+.floating{
+    position: fixed;
+    left: calc(50% + 500px);
+    top: 30px;
+    z-index: 10;
+}
+
+.popup{
+    box-sizing: unset;
+    width: 500px;
+    height: 700px;
+    border:10px solid #444;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 11;
+}
+
+.close{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: #aaa;
+}
